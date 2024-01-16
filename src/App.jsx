@@ -2,6 +2,8 @@ import { RouterProvider, createHashRouter } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { HomePage } from "./pages/HomePage";
 import { MealCategoryPage } from "./pages/MealCategoryPage";
+import { MealsByCategoryPage } from "./pages/MealsByCategoryPage";
+import { MealDetailPage } from "./pages/MealDetailPage";
 
 const router = createHashRouter([
   {
@@ -21,13 +23,18 @@ const router = createHashRouter([
           },
           {
             path: ":mealCategory",
-            element: <>Meal Category Name: List Meals</>
+            children: [
+              {
+                index: true,
+                element: <MealsByCategoryPage />,
+              },
+              {
+                path: ":idMeal",
+                element: <MealDetailPage />
+              }
+            ]
           }
         ]
-      },
-      {
-        path: "ingredients",
-        element: <>Ingredients Category</>,
       },
       {
         path: "local-culinary",

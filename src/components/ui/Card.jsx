@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-export const CategoryCard = ({ name, thumbnail }) => {
+export const Card = ({ to, thumbnail, name }) => {
     return (
         <Link
-            to={`/meals/${name.toLowerCase()}`}
+            to={to}
             className="relative mx-auto overflow-hidden rounded-xl group"
         >
             <img

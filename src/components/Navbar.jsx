@@ -24,10 +24,6 @@ export const Navbar = () => {
             path: "/meals",
         },
         {
-            text: "Ingredients",
-            path: "/ingredients",
-        },
-        {
             text: "Local Culinary",
             path: "/local-culinary",
         }
@@ -61,20 +57,18 @@ export const Navbar = () => {
                 </button>
 
                 {
-                    navlinks.map((link, key) => {
-                        return (
-                            <NavLink
-                                key={key}
-                                to={link.path}
-                                className={({ isActive }) => {
-                                    return `p-4 md:px-0 md:pt-0 md:pb-2 border-b-2 w-full" ${isActive ? "border-orange-500 text-orange-500" : "border-white text-black"}`;
-                                }}
-                                onClick={closeNavbar}
-                            >
-                                {link.text}
-                            </NavLink>
-                        );
-                    })
+                    navlinks.map((link, key) => (
+                        <NavLink
+                            key={key}
+                            to={link.path}
+                            className={({ isActive }) => {
+                                return `p-4 md:px-0 md:pt-0 md:pb-2 border-b-2 w-full" ${isActive ? "border-orange-500 text-orange-500" : "border-white text-black"}`;
+                            }}
+                            onClick={closeNavbar}
+                        >
+                            {link.text}
+                        </NavLink>
+                    ))
                 }
             </div>
         </nav>

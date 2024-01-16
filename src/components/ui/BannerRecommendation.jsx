@@ -6,7 +6,7 @@ export const BannerRecommendation = ({
     isLoading,
 }) => {
     return (
-        <Link className="flex flex-col gap-2 md:flex-row group max-h-96">
+        <Link className="flex flex-col gap-2 md:flex-row group max-h-96" to={`${data ? "/meals/" + data.meals[0].strCategory.toLowerCase() + "/" + data.meals[0].idMeal : "#"}`}>
             <div className="w-full overflow-hidden bg-gray-200 rounded-2xl xl:w-96 aspect-square">
                 {
                     isLoading && (
@@ -24,7 +24,7 @@ export const BannerRecommendation = ({
                     )
                 }
             </div>
-            <div className="text-medium lg:text-xl font-medium text-center text-gray-500 transition-colors duration-200 group-hover:text-orange-500 md:[writing-mode:vertical-rl] text-ellipsis overflow-hidden">
+            <div className="text-medium lg:text-xl font-medium text-center text-gray-500 transition-colors duration-200 group-hover:text-orange-500 md:[writing-mode:vertical-rl] overflow-visible">
                 {
                     data && data.meals[0].strMeal
                 }
