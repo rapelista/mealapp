@@ -1,17 +1,20 @@
+import { Images } from "../../utils/Images";
 import { Banner } from "../components/Banner";
+import { SearchMeal } from "../components/SearchMeal";
 
 export const HomePage = () => {
     return (
         <>
             <Banner />
-            <div className="w-full py-6 bg-orange-500">
-                <div className="container flex flex-col mx-auto text-center">
-                    <span className="mb-3 text-white">or, search your food here</span>
-                    <div className="relative">
-                        <input
-                            type="text"
-                            className="w-full h-12 px-4 border-0 rounded-lg md:w-4/12 focus:ring-0"
-                        />
+            <SearchMeal />
+            <div className="w-full">
+                <div className="container flex flex-col items-center justify-center gap-8 py-12 mx-auto md:py-16 md:gap-0 md:flex-row">
+                    <img
+                        src={Images.CookingFood}
+                        className="w-9/12 bg-red-800 md:w-2/6 rounded-3xl"
+                    />
+                    <div className="text-2xl font-semibold leading-snug text-center text-gray-800 bg-white rounded-lg md:border-l-4 md:border-b-4 md:py-8 md:px-6 border-orange-500/50 md:w-6/12 lg:text-5xl lg:leading-tight h-fit md:-ms-8 md:text-left">
+                        So, what are you going to eat <span className="text-orange-500">today?</span>
                     </div>
                 </div>
             </div>
