@@ -1,7 +1,6 @@
 import { MealDetailThumb } from "./MealDetailThumb";
 import { MealDetailTitle } from "./MealDetailTitle";
 import { MealDetailInstructions } from "./MealDetailInstructions";
-import { parseYoutubeEmbed } from "../../utils/Youtube";
 import { MealDetailYoutube } from "./MealDetailYoutube";
 import { MealDetailIngredients } from "./MealDetailIngredients";
 
@@ -35,7 +34,6 @@ export const MealDetail = ({
                         url={strYoutube}
                     />
                     <MealDetailIngredients
-                        // todo: add data ingredients to component
                         meal={meal}
                     />
                 </div>
