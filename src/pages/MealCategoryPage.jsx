@@ -9,10 +9,10 @@ export const MealCategoryPage = () => {
     } = useGetMealCategory();
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-2 md:mt-12">
             {
                 isLoading && (
-                    <div className="mt-8 text-center">
+                    <div className="text-center">
                         <Spinner />
                     </div>
                 )
@@ -21,7 +21,7 @@ export const MealCategoryPage = () => {
             {
                 data && (
                     <div
-                        className="grid grid-cols-2 gap-4 mt-8 md:grid-cols-3 lg:grid-cols-4"
+                        className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
                     >
                         {
                             data.categories.map(({

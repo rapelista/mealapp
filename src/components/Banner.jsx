@@ -11,7 +11,7 @@ export const Banner = () => {
 
     return (
         <div className="container mx-auto">
-            <div className="flex flex-col justify-between gap-8 py-8 lg:py-16 md:flex-row md:gap-16">
+            <div className="flex flex-col justify-between gap-8 py-4 lg:py-16 md:flex-row md:gap-16">
                 <BannerGreeting />
                 <div>
                     <h5

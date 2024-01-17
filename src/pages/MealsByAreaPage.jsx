@@ -11,14 +11,14 @@ export const MealsByAreaPage = () => {
     } = useGetMealsByArea(mealArea);
 
     return (
-        <div className="container mx-auto mt-8">
+        <div className="container mx-auto mt-2 md:mt-12">
             {
                 isLoading ? (
                     <div className="flex items-center justify-center w-full h-full">
                         <Spinner />
                     </div>
                 ) : data && (
-                    <div className="grid grid-cols-2 gap-4 mt-8 md:grid-cols-3 lg:grid-cols-4">
+                    <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
                         {data.meals.map(({
                             idMeal,
                             strMeal,

@@ -66,23 +66,25 @@ export const HomePage = () => {
                 </div>
                 {
                     (isShow && value) && (
-                        <div className="absolute w-full mt-2">
-                            <div className="w-1/2 mx-auto overflow-y-scroll bg-white divide-y-2 rounded-lg shadow-2xl max-h-40">
-                                {
-                                    (isLoading) ? (
-                                        <div className="py-4 text-center">
-                                            <Spinner />
-                                        </div>
-                                    ) : (data && data.meals) && data.meals.map(({ idMeal, strMeal, strArea }) => (
-                                        <Link
-                                            key={idMeal}
-                                            className="block px-4 py-2"
-                                            to={`/meals/${strArea.toLowerCase()}/${idMeal}`}
-                                        >
-                                            {strMeal}
-                                        </Link>
-                                    ))
-                                }
+                        <div className="absolute w-full mt-2 ">
+                            <div className="container mx-auto">
+                                <div className="w-full overflow-y-scroll bg-white divide-y-2 rounded-lg shadow-2xl md:w-1/2 max-h-40 md:mx-auto">
+                                    {
+                                        (isLoading) ? (
+                                            <div className="py-4 text-center">
+                                                <Spinner />
+                                            </div>
+                                        ) : (data && data.meals) && data.meals.map(({ idMeal, strMeal, strArea }) => (
+                                            <Link
+                                                key={idMeal}
+                                                className="block px-4 py-2"
+                                                to={`/meals/${strArea.toLowerCase()}/${idMeal}`}
+                                            >
+                                                {strMeal}
+                                            </Link>
+                                        ))
+                                    }
+                                </div>
                             </div>
                         </div>
                     )

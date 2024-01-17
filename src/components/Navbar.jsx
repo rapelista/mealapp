@@ -31,7 +31,7 @@ export const Navbar = () => {
 
     return (
         <nav
-            className="relative flex items-center justify-between border-b-2 border-gray-200 md:p-8"
+            className="fixed top-0 flex items-center justify-between w-full bg-white border-b-2 border-gray-200 md:p-8 z-[100]"
         >
             <Link to="/">
                 <img src={Images.Logo} alt="Mealapp" className="h-12 m-4 md:m-0" />

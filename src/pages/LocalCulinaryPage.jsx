@@ -9,7 +9,7 @@ export const LocalCulinaryPage = () => {
     } = useGetArea();
 
     return (
-        <div className="mt-4">
+        <div className="mt-2 md:mt-12">
             {isLoading ? (
                 <div className="text-center">
                     <Spinner />
