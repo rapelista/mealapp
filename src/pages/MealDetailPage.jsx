@@ -11,10 +11,10 @@ export const MealDetailPage = () => {
     } = useGetMealById(idMeal);
 
     return (
-        <div className="container mx-auto mt-8">
+        <div className="mt-8">
             {
                 isLoading ? (
-                    <div className="flex items-center justify-center w-full h-full">
+                    <div className="text-center">
                         <Spinner />
                     </div>
                 ) : data && <MealDetail data={data.meals[0]} />

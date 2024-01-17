@@ -4,6 +4,8 @@ import { HomePage } from "./pages/HomePage";
 import { MealCategoryPage } from "./pages/MealCategoryPage";
 import { MealsByCategoryPage } from "./pages/MealsByCategoryPage";
 import { MealDetailPage } from "./pages/MealDetailPage";
+import { LocalCulinaryPage } from "./pages/LocalCulinaryPage";
+import { MealsByAreaPage } from "./pages/MealsByAreaPage";
 
 const router = createHashRouter([
   {
@@ -38,7 +40,25 @@ const router = createHashRouter([
       },
       {
         path: "local-culinary",
-        element: <>Local Culinary Category</>,
+        children: [
+          {
+            index: true,
+            element: <LocalCulinaryPage />,
+          },
+          {
+            path: ":mealArea",
+            children: [
+              {
+                index: true,
+                element: <MealsByAreaPage />,
+              },
+              {
+                path: ":idMeal",
+                element: <MealDetailPage />
+              }
+            ]
+          }
+        ]
       },
     ]
   }
