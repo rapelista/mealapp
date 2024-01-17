@@ -2,7 +2,7 @@ import {
     MagnifyingGlassIcon
 } from "@heroicons/react/24/solid";
 
-export const SearchMeal = ({ ...props }) => {
+export const Search = ({ ...props }) => {
     return (
         <div className="w-full py-6 bg-orange-500">
             <div className="container flex flex-col mx-auto text-center">

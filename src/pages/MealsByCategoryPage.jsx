@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useGetMealsByCategory } from "../hooks/useGetMealsByCategory";
-import { Spinner } from "../components/ui/Spinner";
-import { MealCard } from "../components/ui/MealCard";
-import { Card } from "../components/ui/Card";
+import { Spinner } from "../components/Spinner";
+import { Card } from "../components/Card";
 
 export const MealsByCategoryPage = () => {
     const { mealCategory } = useParams();

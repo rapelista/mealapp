@@ -1,12 +1,12 @@
 import { Images } from "../../utils/Images";
 import { Banner } from "../components/Banner";
-import { SearchMeal } from "../components/SearchMeal";
+import { Search } from "../components/Search";
 
 export const HomePage = () => {
     return (
         <>
             <Banner />
-            <SearchMeal />
+            <Search />
             <div className="w-full">
                 <div className="container flex flex-col items-center justify-center gap-8 py-12 mx-auto md:py-16 md:gap-0 md:flex-row">
                     <img

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useGetRandomMeal } from "../hooks/useGetRandomMeal";
-import { BannerGreeting } from "./ui/BannerGreeting";
-import { BannerRecommendation } from "./ui/BannerRecommendation";
+import { BannerGreeting } from "./BannerGreeting";
+import { BannerRecommendation } from "./BannerRecommendation";
 
 export const Banner = () => {
     const {

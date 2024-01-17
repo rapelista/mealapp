@@ -1,6 +1,5 @@
-import { Card } from "../components/ui/Card";
-import { CategoryCard } from "../components/ui/CategoryCard";
-import { Spinner } from "../components/ui/Spinner";
+import { Card } from "../components/Card";
+import { Spinner } from "../components/Spinner";
 import { useGetMealCategory } from "../hooks/useGetMealCategory";
 
 export const MealCategoryPage = () => {

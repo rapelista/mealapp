@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useGetMealById } from "../hooks/useGetMealById";
-import { Spinner } from "../components/ui/Spinner";
-import { MealDetail } from "../components/ui/MealDetail";
+import { Spinner } from "../components/Spinner";
+import { MealDetail } from "../components/MealDetail";
 
 export const MealDetailPage = () => {
     const { idMeal } = useParams();
