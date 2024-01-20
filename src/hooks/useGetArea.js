@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import ApiService from "../../utils/ApiService";
+import ApiService from "../utils/ApiService";
 
 export const useGetArea = () => {
     return useQuery({

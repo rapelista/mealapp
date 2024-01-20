@@ -1,4 +1,4 @@
-import { parseYoutubeEmbed } from "../../utils/Youtube";
+import { parseYoutubeEmbed } from "../utils/Youtube";
 
 export const MealDetailYoutube = ({
     url,

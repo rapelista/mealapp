@@ -1,4 +1,4 @@
-import { Images } from "../../utils/Images";
+import { Images } from "../utils/Images";
 
 export const BannerSecondary = () => {
     return (
