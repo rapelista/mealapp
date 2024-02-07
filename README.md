@@ -25,8 +25,8 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 ### Installation
 
 ```bash
-git clone https://github.com/rapelista/cmlabs-frontend-internship-test.git
-cd cmlabs-frontend-internship-test
+git clone https://github.com/rapelista/mealapp.git
+cd mealapp
 npm install
 ```
 
