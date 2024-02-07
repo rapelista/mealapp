@@ -50,4 +50,4 @@ The production-ready code will be in the `dist` directory.
 
 ## Demo
 
-You can visit demo here: https://cmlabs.gvstang.codes
+You can visit demo here: [https://mealapp.gvstang.codes/](https://mealapp.gvstang.codes/)
