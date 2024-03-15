@@ -1,4 +1,4 @@
-# CMLABS Frontend Internship Test | Mealapp
+# Mealapp
 
 ## Overview
 
